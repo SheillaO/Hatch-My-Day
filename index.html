@@ -58,6 +58,10 @@
 
 	<!-- Blueprint output — hidden until button is clicked -->
 	<div id="blueprint">
+
+		<!-- Lottie animation — plays when blueprint appears -->
+		<canvas id="dotlottie-canvas"></canvas>
+
 		<div class="card" id="morning-card">
 			<p class="time">🌅 Morning</p>
 			<p class="activity" id="morning-activity">Finding something for you...</p>
@@ -73,6 +77,18 @@
 	</div>
 
 	<script src="index.js"></script>
+
+	<!-- Lottie player — loaded as a module from CDN, no npm needed -->
+	<script type="module">
+		import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+		new DotLottie({
+			autoplay: true,
+			loop: true,
+			canvas: document.getElementById("dotlottie-canvas"),
+			src: "https://lottie.host/226ae262-bca4-417e-8e24-dedf9639e149/ANPBxEbrSU.lottie" // 👈 Replace with your URL from lottiefiles.com
+		});
+	</script>
 </body>
 
 </html>

@@ -1,11 +1,12 @@
-/* ---- Base (kept from original) ---- */
 html, body {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background: #F7941E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00A651, #72C6EF, #F7941E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00A651, #72C6EF, #F7941E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100vh;
     font-family: "Space Grotesk", sans-serif;
     display: flex;
@@ -15,7 +16,7 @@ body {
     box-sizing: border-box;
 }
 
-/* ---- Header (updated from original) ---- */
+
 h1 {
     text-align: center;
     margin-top: 0;
@@ -34,7 +35,7 @@ h1 {
     font-size: 1rem;
 }
 
-/* ---- Button (updated from original circle) ---- */
+
 button {
     padding: 14px 36px;
     background-color: #7c3aed;
@@ -54,12 +55,11 @@ button:hover {
     background-color: #6d28d9;
 }
 
-/* ---- .fun background (kept from original, updated colors) ---- */
 .fun {
-    background: linear-gradient(135deg, #1a0533, #2d1065, #1a0533);
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
 }
 
-/* ---- New: Question blocks ---- */
+
 .question {
     width: 100%;
     max-width: 440px;
@@ -79,12 +79,11 @@ button:hover {
     flex-wrap: wrap;
 }
 
-/* Hide the native radio input */
+
 .options input[type="radio"] {
     display: none;
 }
 
-/* Style the label's span to look like a button */
 .options span {
     display: inline-block;
     padding: 9px 20px;
@@ -98,14 +97,14 @@ button:hover {
     transition: all 0.2s;
 }
 
-/* When the radio is checked, highlight the span next to it */
+
 .options input[type="radio"]:checked + span {
     background: #7c3aed;
     border-color: #7c3aed;
     color: white;
 }
 
-/* ---- New: Hours number input ---- */
+
 #hours {
     background: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -118,7 +117,7 @@ button:hover {
     outline: none;
 }
 
-/* ---- New: Blueprint section ---- */
+
 #blueprint {
     display: none;
     flex-direction: column;
@@ -127,7 +126,6 @@ button:hover {
     max-width: 440px;
 }
 
-/* ---- New: Activity cards ---- */
 .card {
     background: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -151,4 +149,12 @@ button:hover {
     font-size: 1.05rem;
     margin: 0;
     line-height: 1.5;
+}
+
+
+#dotlottie-canvas {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto 8px;
 }

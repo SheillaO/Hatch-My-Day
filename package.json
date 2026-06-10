@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-web": "^0.74.0",
     "vite": "latest"
-  },
-  "devDependencies": {}
+  }
 }
