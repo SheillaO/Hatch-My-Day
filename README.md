@@ -28,4 +28,22 @@ Hatch returns a structured day blueprint — one, two, or three activity blocks 
  
 ---
 
-
+## The Core Insight
+ 
+The original BoredBot project this was built from calls the Bored API like this:
+ 
+```js
+fetch("https://www.boredapi.com/api/activity")
+```
+ 
+A completely random result every time.  
+Hatch calls the same API like this:
+ 
+```js
+fetch("https://www.boredapi.com/api/activity?type=relaxation&participants=1")
+```
+ 
+Same API. Completely different result quality. The `type` and `participants` parameters exist in the documentation but almost no one uses them. The product improvement here wasn't about writing more complex code — it was about reading the docs and asking: *what does this user actually need right now?*
+ 
+That question drives the whole build.
+ 
