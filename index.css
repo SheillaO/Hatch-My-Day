@@ -1,32 +1,154 @@
-body {
+/* ---- Base (kept from original) ---- */
+html, body {
     margin: 0;
+    padding: 0;
 }
 
-main {
-    /* uigradients.com */
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
-    height: 100vh;
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    font-family: "Space Grotesk", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Oxygen, sans-serif;
+    padding: 48px 20px 60px;
+    box-sizing: border-box;
 }
 
+/* ---- Header (updated from original) ---- */
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+}
+
+#idea {
+    text-align: center;
+    color: #94a3b8;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+/* ---- Button (updated from original circle) ---- */
 button {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: red;
-    border: 1px solid darkred;
+    padding: 14px 36px;
+    background-color: #7c3aed;
+    color: white;
+    border-radius: 50px;
+    outline: none;
+    border: none;
     cursor: pointer;
+    font-size: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    margin: 8px 0 44px;
+    transition: background-color 0.2s;
 }
 
+button:hover {
+    background-color: #6d28d9;
+}
+
+/* ---- .fun background (kept from original, updated colors) ---- */
 .fun {
-    /* CSS generated from https://uigradients.com */
-    background: #fc4a1a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(135deg, #1a0533, #2d1065, #1a0533);
+}
+
+/* ---- New: Question blocks ---- */
+.question {
+    width: 100%;
+    max-width: 440px;
+    margin-bottom: 28px;
+}
+
+.label {
+    color: #e2e8f0;
+    margin: 0 0 12px 0;
+    font-size: 0.95rem;
+}
+
+/* ---- New: Radio buttons styled as pill selectors ---- */
+.options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Hide the native radio input */
+.options input[type="radio"] {
+    display: none;
+}
+
+/* Style the label's span to look like a button */
+.options span {
+    display: inline-block;
+    padding: 9px 20px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e2e8f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: "Space Grotesk", sans-serif;
+    transition: all 0.2s;
+}
+
+/* When the radio is checked, highlight the span next to it */
+.options input[type="radio"]:checked + span {
+    background: #7c3aed;
+    border-color: #7c3aed;
+    color: white;
+}
+
+/* ---- New: Hours number input ---- */
+#hours {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    width: 80px;
+    outline: none;
+}
+
+/* ---- New: Blueprint section ---- */
+#blueprint {
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 440px;
+}
+
+/* ---- New: Activity cards ---- */
+.card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+.activity {
+    color: #f1f5f9;
+    font-size: 1.05rem;
+    margin: 0;
+    line-height: 1.5;
 }
