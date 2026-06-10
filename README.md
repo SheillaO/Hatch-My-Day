@@ -12,3 +12,20 @@ Most "boredom solvers" treat every user identically. They return a random activi
 That mismatch is the real problem. Hatch solves it with three questions.
  
 ---
+
+ 
+## What It Does
+ 
+Answer three questions:
+ 
+| Question | Options |
+|----------|---------|
+| How's your energy? | 😴 Low / 🙂 Medium / ⚡ High |
+| Who are you with? | 🧍 Solo / 👥 With others |
+| How many free hours? | 1–12 |
+ 
+Hatch returns a structured day blueprint — one, two, or three activity blocks depending on your available time. Not a rigid schedule. Just enough shape to stop the day from disappearing.
+ 
+---
+
+
