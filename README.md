@@ -1,6 +1,10 @@
 # Hatch 🥚
  
 **The problem isn't that people don't have ideas for their free time.  It's that generic suggestions were never built for *them*.**
+
+
+<img width="1368" height="801" alt="Hatch" src="https://github.com/user-attachments/assets/6692ad7c-920a-4274-95a2-e2da261c2159" />
+
  
 ---
  
