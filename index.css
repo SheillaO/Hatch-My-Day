@@ -153,8 +153,9 @@ button:hover {
 
 
 #dotlottie-canvas {
-    width: 160px;
-    height: 160px;
-    display: block;
-    margin: 0 auto 8px;
+     width: 300px;         /* Match your HTML width perfectly */
+    height: 300px;        /* Match your HTML height perfectly */
+    display: block;       /* Force block display behavior */
+    margin: 0 auto 16px;  /* Clean centering and bottom spacing */
+    background: transparent;
 }

@@ -14,7 +14,6 @@
 	<h1 id="title">🥚 Hatch</h1>
 	<h4 id="idea">Answer three questions. Get your day.</h4>
 
-	<!-- Question 1: Energy -->
 	<div class="question">
 		<p class="label">How's your energy right now?</p>
 		<div class="options">
@@ -33,7 +32,7 @@
 		</div>
 	</div>
 
-	<!-- Question 2: Social context -->
+	
 	<div class="question">
 		<p class="label">Who are you with?</p>
 		<div class="options">
@@ -48,7 +47,7 @@
 		</div>
 	</div>
 
-	<!-- Question 3: Available hours -->
+	
 	<div class="question">
 		<p class="label">How many free hours do you have?</p>
 		<input type="number" id="hours" min="1" max="12" value="6">
@@ -56,10 +55,10 @@
 
 	<button id="bored-bot">Hatch My Day 🥚</button>
 
-	<!-- Blueprint output — hidden until button is clicked -->
+	
 	<div id="blueprint">
 
-		<!-- Lottie animation — plays when blueprint appears -->
+	
 		<canvas id="dotlottie-canvas"></canvas>
 
 		<div class="card" id="morning-card">
@@ -78,7 +77,7 @@
 
 	<script src="index.js"></script>
 
-	<!-- Lottie player — loaded as a module from CDN, no npm needed -->
+	
 	<script type="module">
 		import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
@@ -86,7 +85,7 @@
 			autoplay: true,
 			loop: true,
 			canvas: document.getElementById("dotlottie-canvas"),
-			src: "https://lottie.host/226ae262-bca4-417e-8e24-dedf9639e149/ANPBxEbrSU.lottie" // 👈 Replace with your URL from lottiefiles.com
+			src: "https://lottie.host/226ae262-bca4-417e-8e24-dedf9639e149/ANPBxEbrSU.lottie" // 👈 
 		});
 	</script>
 </body>
