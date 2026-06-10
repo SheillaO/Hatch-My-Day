@@ -70,3 +70,40 @@ That question drives the whole build.
 **Social context** (`participants=1` or `participants=2`) is passed directly to the API as a query string parameter.
  
 ---
+
+## Built With
+ 
+- **HTML5** — semantic structure, accessible radio button inputs
+- **CSS3** — custom pill-button radio styling, CSS transitions, flexbox layout
+- **Vanilla JavaScript** — DOM manipulation, conditional fetch logic, reusable functions
+- **[Bored API](https://www.boredapi.com)** — activity data source
+- No frameworks. No build tools. No dependencies.
+---
+ 
+## What This Project Demonstrates
+ 
+**JavaScript**
+- Reading multiple user inputs with `querySelector` (radio buttons + number input)
+- Building API URLs dynamically from user-selected values
+- Reusable functions to avoid copy-pasting the same `fetch()` three times
+- Conditional rendering: showing or hiding elements based on logic (`hours >= 7`)
+- Error handling with `.catch()` so the app never silently fails
+**CSS**
+- Hiding native `<input type="radio">` elements and fully restyling them via their adjacent `<span>`
+- Using the `:checked` pseudo-class to reflect selected state without JavaScript
+- CSS transitions for smooth interaction feedback
+**Product thinking embedded in code**
+- The hours input doesn't just store a number — it gates the output
+- Three hours of free time shouldn't produce the same result as a full free day
+- Small decisions like this are the difference between a demo and a product
+---
+ 
+## Roadmap
+ 
+- [ ] **Regenerate per block** — swap one activity without rebuilding the whole day
+- [ ] **Persist with `localStorage`** — blueprint survives a page refresh
+- [ ] **Commitment timer per block** — the reason people don't follow through is the absence of a soft deadline
+- [ ] **Screenshot-friendly export** — the blueprint as a shareable card
+---
+
+
