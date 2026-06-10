@@ -106,4 +106,16 @@ That question drives the whole build.
 - [ ] **Screenshot-friendly export** — the blueprint as a shareable card
 ---
 
-
+## Run It Locally
+ 
+No install required.
+ 
+```bash
+git clone https://github.com/yourusername/hatch
+cd hatch
+open index.html
+```
+ 
+---
+ 
+*Designed to solve a real problem.*
