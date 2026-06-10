@@ -12,7 +12,7 @@ function getTypes(energy) {
 // Same fetch + .then() pattern as the original — now reusable
 function fetchActivity(type, participants, elementId) {
   const url =
-    "https://www.boredapi.com/api/activity?type=" +
+    "https://apis.scrimba.com/bored/api/activity?type=" +
     type +
     "&participants=" +
     participants;
