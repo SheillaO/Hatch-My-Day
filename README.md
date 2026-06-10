@@ -46,4 +46,27 @@ fetch("https://www.boredapi.com/api/activity?type=relaxation&participants=1")
 Same API. Completely different result quality. The `type` and `participants` parameters exist in the documentation but almost no one uses them. The product improvement here wasn't about writing more complex code — it was about reading the docs and asking: *what does this user actually need right now?*
  
 That question drives the whole build.
+
+---
  
+## How the Logic Works
+ 
+**Energy → Activity Type**
+ 
+| Energy Level | Morning | Afternoon | Evening |
+|--------------|---------|-----------|---------|
+| Low | relaxation | education | music |
+| Medium | recreational | cooking | music |
+| High | social | diy | recreational |
+ 
+**Hours → Number of Blocks**
+ 
+| Free Time | Blueprint |
+|-----------|-----------|
+| 1 – 3 hrs | Afternoon block only |
+| 4 – 6 hrs | Morning + Afternoon |
+| 7+ hrs | Full day — all three |
+ 
+**Social context** (`participants=1` or `participants=2`) is passed directly to the API as a query string parameter.
+ 
+---
